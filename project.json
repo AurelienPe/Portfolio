@@ -1,0 +1,25 @@
+[
+{
+    "title": "Ohmyfood",
+    "subtitle": "Améliorez l'interface d'un site mobile avec des animations CSS",
+    "cover": "images/ohmyfood.webp",
+    "alt": "Ohmyfood",
+    "url": "https://aurelienpe.github.io/Ohmyfood/",
+    "languages": [
+        "HTML5",
+        "Sass"
+    ]
+},
+{
+    "title": "Kasa",
+    "subtitle": "Créez une application web de location immobilière avec React",
+    "cover": "images/kasa.webp",
+    "alt": "Kasa",
+    "url": "https://github.com/AurelienPe/kasa",
+    "languages": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+    ]
+}
+]
