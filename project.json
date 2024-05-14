@@ -2,7 +2,7 @@
 {
     "title": "Ohmyfood",
     "subtitle": "Améliorez l'interface d'un site mobile avec des animations CSS",
-    "cover": "images/ohmyfood.webp",
+    "cover": "images/ohmyfood.png",
     "alt": "Ohmyfood",
     "url": "https://aurelienpe.github.io/Ohmyfood/",
     "languages": [
@@ -13,7 +13,7 @@
 {
     "title": "Kasa",
     "subtitle": "Créez une application web de location immobilière avec React",
-    "cover": "images/kasa.webp",
+    "cover": "images/kasa.png",
     "alt": "Kasa",
     "url": "https://github.com/AurelienPe/kasa",
     "languages": [
