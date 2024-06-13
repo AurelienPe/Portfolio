@@ -17,27 +17,36 @@ function displayProjects() {
     data.forEach(item => {
       const projectCard = document.createElement("li");
       projectCard.classList.add("project-card");
-      const projectTitle = document.createElement("h3");
       const projectLink = document.createElement("a");
       const projectFigure = document.createElement("figure");
       const projectCaption = document.createElement("figcaption");
       const projectImage = document.createElement("img");
       projectImage.classList.add("project-image");
 
-      projectTitle.textContent = item.title;
+      projectCaption.textContent = item.title;
       projectLink.href = item.url;
       projectLink.target = "_blank";
       projectCaption.textContent = item.subtitle;
       projectImage.src = item.cover;
       projectImage.alt = item.alt;
 
+      if (item.languages) {
+        const languagesList = document.createElement("ul");
+        languagesList.classList.add("languages-list");
+        item.languages.forEach(language => {
+          const languageItem = document.createElement("li");
+          languageItem.textContent = language;
+          languagesList.appendChild(languageItem);
+        });
+        projectCaption.appendChild(languagesList);
+      }
       
       projectContainer.appendChild(projectCard);
-      projectCard.appendChild(projectTitle);
       projectCard.appendChild(projectLink);
       projectLink.appendChild(projectFigure);
-      projectFigure.appendChild(projectCaption);
       projectFigure.appendChild(projectImage);
+      projectFigure.appendChild(projectCaption);
+
     });
   })
   .catch(error => {
