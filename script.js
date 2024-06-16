@@ -35,7 +35,9 @@ function displayProjects() {
         languagesList.classList.add("languages-list");
         item.languages.forEach(language => {
           const languageItem = document.createElement("li");
-          languageItem.textContent = language;
+          const languageIcon = document.createElement("i");
+          languageIcon.classList.add("fab", `fa-${language}`);
+          languageItem.appendChild(languageIcon);
           languagesList.appendChild(languageItem);
         });
         projectCaption.appendChild(languagesList);

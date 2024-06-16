@@ -1,4 +1,4 @@
-/* style commun */
+/* css reset */
 
 html {
   scroll-behavior: smooth;
@@ -11,6 +11,14 @@ body {
 
 main {
   padding: 0 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
@@ -47,6 +55,10 @@ figure {
 
 /* style précis */
 
+nav {
+  margin-bottom: 60px;
+}
+
 nav ul{
   display: flex;
   align-items: center;
@@ -64,8 +76,40 @@ nav a {
 }
 
 header {
-  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
 }
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header div {
+  position: relative;
+  border: #000 solid 1px;
+  width: 30px;
+  height: 30px;
+}
+
+header div:first-child {
+  right: 145px;
+  border-bottom: none;
+  border-right: none;
+}
+
+header div:last-child {
+  left: 145px;
+  border-top: none;
+  border-left: none;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+/*? style gallery */
 
 [id=gallery] {
   display: flex;
@@ -73,21 +117,43 @@ header {
   gap: 20px;
 }
 
+[id=gallery] a:hover, [id=gallery] a:focus {
+  text-decoration: none;
+}
+
 [id=gallery] figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: solid 2px
 }
 
 [id=gallery] figcaption {
   color: black;
   background-color: lightgray;
+  width: 100%;
+  height: 100%;
+  padding-top: 5px;
 }
 
 [id=gallery] ul {
   display: flex;
-  padding-top: 5px;
+  padding: 5px;
   gap: 15px;
-  color: blueviolet;
 }
+
+[id=gallery] .project-card {
+  width: 100%;
+}
+
+[id=gallery] img {
+  width: 90%;
+  height: 100px;
+  object-fit: contain;
+  margin: 10px 0;
+}
+
+/*? style skills */
 
 [id=skills] ul {
   display: flex;
@@ -98,6 +164,7 @@ header {
 
 [id=skills] li {
   display: flex;
+  justify-content: center;
   text-align: center;
   width: calc((100% - 0px) / 3);
 }
@@ -111,13 +178,44 @@ header {
     font-size: 1rem;
   }
 
-  [id=gallery] li {
-    width: calc((100% - 150px) / 3);
+  [id=skills] img {
+    height: 120px;
   }
+
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1366px) {
   nav a{
     font-size: 1.3rem;
   }
+
+  .fab {
+    font-size: 1.5rem;
+  }
+
+  /*? style gallery */
+
+  [id=gallery] {
+    flex-direction: row;
+  }
+
+  [id=gallery] ul {
+    padding: 15px 10px;
+    gap: 30px;
+  }
+
+  [id=gallery] figure {
+    height: 200px;
+  }
+
+  /*? style skills */
+
+  [id=skills] ul {
+    flex-flow: row;
+  }
+
+  [id=skills] img {
+    height: 160px;
+  }
+
 }

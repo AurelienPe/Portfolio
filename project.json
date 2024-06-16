@@ -6,8 +6,8 @@
     "alt": "Booki",
     "url": "https://aurelienpe.github.io/booki/",
     "languages": [
-        "HTML5",
-        "CSS3"
+        "html5",
+        "css3"
     ]
 },
 {
@@ -17,8 +17,8 @@
     "alt": "Ohmyfood",
     "url": "https://aurelienpe.github.io/Ohmyfood/",
     "languages": [
-        "HTML5",
-        "Sass"
+        "html5",
+        "sass"
     ]
 },
 {
@@ -28,9 +28,9 @@
     "alt": "Kasa",
     "url": "https://github.com/AurelienPe/kasa",
     "languages": [
-        "HTML5",
-        "CSS3",
-        "JavaScript"
+        "html5",
+        "css3",
+        "javascript"
     ]
 }
 ]
