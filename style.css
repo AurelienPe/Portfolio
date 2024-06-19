@@ -109,6 +109,14 @@ section {
   margin-bottom: 60px;
 }
 
+[id=projects] h2 {
+  margin-bottom: 20px;
+}
+
+.fab, .far {
+  font-size: 1.6rem;
+}
+
 /*? style gallery */
 
 [id=gallery] {
@@ -129,6 +137,8 @@ section {
 }
 
 [id=gallery] figcaption {
+  display: flex;
+  flex-direction: column;
   color: black;
   background-color: lightgray;
   width: 100%;
@@ -173,7 +183,20 @@ section {
   height: 80px;
 }
 
+/*? style contact */
+
+[id=contact] {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
 @media (min-width: 768px) {
+  .fab, .far {
+    font-size: 1.8rem;
+  }
+
   nav a{
     font-size: 1rem;
   }
@@ -189,9 +212,10 @@ section {
     font-size: 1.3rem;
   }
 
-  .fab {
-    font-size: 1.5rem;
+  .fab, .far {
+    font-size: 2rem;
   }
+
 
   /*? style gallery */
 
@@ -200,12 +224,12 @@ section {
   }
 
   [id=gallery] ul {
-    padding: 15px 10px;
+    padding: 22px 10px;
     gap: 30px;
   }
 
   [id=gallery] figure {
-    height: 200px;
+    height: 220px;
   }
 
   /*? style skills */
