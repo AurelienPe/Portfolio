@@ -232,6 +232,10 @@ section {
     height: 220px;
   }
 
+  [id=gallery] figcaption {
+    font-size: 0.9rem;
+  }
+
   /*? style skills */
 
   [id=skills] ul {
