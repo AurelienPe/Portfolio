@@ -8,7 +8,6 @@
 // ********** FUNCTIONS **********
 function displayProjects() {
   const projectContainer = document.querySelector("#gallery");
-  projectContainer.innerHTML = "";
 
   fetch('./project.json')
   .then(response => response.json())

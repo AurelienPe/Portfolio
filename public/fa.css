@@ -244,12 +244,12 @@
   content: "\f13c";
 }
 
-.fa-css3-alt:before {
-  content: "\f38b";
-}
-
 .fa-javascript:before {
   content: "\f3b9";
+}
+
+.fa-react:before {
+  content: "\f41b";
 }
 
 .fa-sass:before {
